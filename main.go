@@ -10,6 +10,7 @@ import (
 
 func main() {
 	port := flag.Int("port", 3000, "port to listen on")
+	flag.Parse()
 
 	app := fiber.New()
 
